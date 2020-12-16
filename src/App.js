@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(4);
+const App = () => {
+  const [count, setCount] = useState(0);
 
-  function decrementCount() {
+  const decrementCount = () => {
     setCount((prevCount) => prevCount - 1);
-  }
+  };
 
-  function incrementCount() {
+  const incrementCount = () => {
     setCount((prevCount) => prevCount + 1);
-  }
+  };
 
   return (
     <>
@@ -18,5 +18,5 @@ function App() {
       <button onClick={incrementCount}>+</button>
     </>
   );
-}
+};
 export default App;
