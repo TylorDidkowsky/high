@@ -5,7 +5,9 @@ const App = () => {
   const count = state.count
 const theme = state.theme
   const decrementCount = () => {
-    //setCount((prevCount) => prevCount - 1);
+    setState((prevState) => {
+return { ...prevState, count: prevState.count - 1 }
+    })
   };
 
   const incrementCount = () => {
