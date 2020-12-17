@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Adder from './Adder';
+import Displayer from './Displayer';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -16,8 +18,8 @@ const App = () => {
   return (
     <>
       <button onClick={decrementCount}>-</button>
-      <span>{count}</span>
-      <span>{theme}</span>
+      <Adder />
+      <Displayer count={count} theme={theme} tylor={1 + 2 + 3} />
       <button onClick={incrementCount}>+</button>
     </>
   );
