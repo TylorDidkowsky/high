@@ -16,10 +16,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <div style={{ backgroundColor: theme,}}>
       <Adder incrementCount={incrementCount} decrementCount={decrementCount} />
       <Displayer count={count} theme={theme} tylor={1 + 2 + 3} />
-    </>
+    </div>
   );
 };
 
