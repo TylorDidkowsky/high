@@ -18,21 +18,11 @@ const App = () => {
   return (
     <>
       <button onClick={decrementCount}>-</button>
-      <Adder />
+      <Adder incrementCount={incrementCount} />
       <Displayer count={count} theme={theme} tylor={1 + 2 + 3} />
-      <button onClick={incrementCount}>+</button>
+     
     </>
   );
 };
-import ChildComponent from './displayer.js'
-class ParentComponent extends Component {
-  render() {
-    return (
-      <div>
-        <h1>I am the parent </h1>
-        <h3><ChildComponent text="I am the child"/></h3>
-      </div>
-    )
-  }
-}
+
 export default App;

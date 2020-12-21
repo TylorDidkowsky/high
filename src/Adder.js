@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Adder = () => {
-  return <div>Hello world</div>;
+const Adder = (props) => {
+  const incrementCount = props.incrementCount;
+  return (
+    <div>
+      <button onClick={incrementCount}>+</button>
+    </div>
+  );
 };
-
-const Add = () => {
-  return <button>+</button>;
-};
-
 
 export default Adder;
