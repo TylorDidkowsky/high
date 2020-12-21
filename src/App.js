@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import Adder from './Adder';
 import Displayer from './Displayer';
 
@@ -24,5 +24,15 @@ const App = () => {
     </>
   );
 };
-
+import ChildComponent from './displayer.js'
+class ParentComponent extends Component {
+  render() {
+    return (
+      <div>
+        <h1>I am the parent </h1>
+        <h3><ChildComponent text="I am the child"/></h3>
+      </div>
+    )
+  }
+}
 export default App;

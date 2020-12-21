@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Adder = () => {
-    return (
-        <div>
-          Hello world  
-        </div>
-    )
-}
+  return <div>Hello world</div>;
+};
 
-export default Adder
+const Add = () => {
+  return <button>+</button>;
+};
+
+
+export default Adder;
