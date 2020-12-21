@@ -17,10 +17,8 @@ const App = () => {
 
   return (
     <>
-      <button onClick={decrementCount}>-</button>
-      <Adder incrementCount={incrementCount} />
+      <Adder incrementCount={incrementCount} decrementCount={decrementCount} />
       <Displayer count={count} theme={theme} tylor={1 + 2 + 3} />
-     
     </>
   );
 };
