@@ -15,6 +15,9 @@ const Adder = (props) => {
       <Button basic inverted color='violet'>
         Violet
       </Button>
+      <Button size='huge'>Huge</Button>
+      <Button negative>Negative Button</Button>
+      <Button negative onClick={decrementCount}>-</Button>
     </div>
   );
 };
