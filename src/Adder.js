@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 const Adder = (props) => {
   const incrementCount = props.incrementCount;
@@ -7,6 +9,12 @@ const Adder = (props) => {
     <div>
       <button onClick={decrementCount}>-</button>
       <button onClick={incrementCount}>+</button>
+      <Header as='h4' inverted color='purple'>
+        Purple
+      </Header>
+      <Button basic inverted color='violet'>
+        Violet
+      </Button>
     </div>
   );
 };
