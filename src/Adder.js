@@ -6,11 +6,14 @@ import { Image } from 'semantic-ui-react';
 import { Placeholder } from 'semantic-ui-react';
 import { Feed, Icon } from 'semantic-ui-react';
 import { Checkbox } from 'semantic-ui-react';
+import { StackScreen } from 'semantic-ui-react'; 
+
 const Adder = (props) => {
     const incrementCount = props.incrementCount;
     const decrementCount = props.decrementCount;
     return (
         <div>
+   
      <Checkbox toggle />
       <button onClick={decrementCount}>-</button>
       <button onClick={incrementCount}>+</button>
