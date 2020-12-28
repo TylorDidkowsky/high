@@ -30,8 +30,8 @@ const Adder = (props) => {
       </Button>
       <Card>Some text in a card</Card>
       <Image src='/images/wireframe/image.png' size='small' />
-      <Image src='/images/wireframe/image.png' fluid />
-      <img src='/images/wireframe/image.png' class='ui fluid image' />
+      <Image src='/images/wireframe/image.png' size='tiny' />
+      
       <Card.Group itemsPerRow={3}>
         <Card>
           <Card.Content>
