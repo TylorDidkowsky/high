@@ -4,7 +4,7 @@ import Displayer from './Displayer';
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const [theme, setTheme] = useState('Aqua');
+  const [theme, setTheme] = useState('teal');
 
   const decrementCount = () => {
     setCount((prevCount) => prevCount - 1);
@@ -16,9 +16,9 @@ const App = () => {
   };
 
   return (
-    <div style={{ backgroundColor: theme }}>
-      <Adder incrementCount={incrementCount} decrementCount={decrementCount} />
+    <div style={{ backgroundColor: "white"}}>
       <Displayer count={count} theme={theme} tylor={1 + 2 + 3} />
+      <Adder incrementCount={incrementCount} decrementCount={decrementCount} />
     </div>
   );
 };
