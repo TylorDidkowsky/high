@@ -11,7 +11,7 @@ const Displayer = (props) => {
     let c = props.color;
     return (
       <div>
-        <Header as='h4' color={c}>
+        <Header as='h4' color={"color"}>
           {JSON.stringify(words)}
         </Header>
       </div>

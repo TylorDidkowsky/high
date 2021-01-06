@@ -1,3 +1,6 @@
+//Maybe a progress bar
+//Maybe a split button
+
 import React from 'react';
 import { Header } from 'semantic-ui-react';
 import { Button } from 'semantic-ui-react';
@@ -6,20 +9,18 @@ import { Image } from 'semantic-ui-react';
 import { Placeholder } from 'semantic-ui-react';
 import { Feed, Icon } from 'semantic-ui-react';
 import { Checkbox } from 'semantic-ui-react';
-import { StackScreen } from 'semantic-ui-react'; 
+import { Radio } from 'semantic-ui-react';
 
 const Adder = (props) => {
-    const incrementCount = props.incrementCount;
-    const decrementCount = props.decrementCount;
-    return (
-        <div>
-   
-     <Checkbox toggle />
-      <button onClick={decrementCount}>-</button>
-      <button onClick={incrementCount}>+</button>
-      <Header as='h4' inverted color='purple'>
-        Purple
-      </Header>
+  const incrementCount = props.incrementCount;
+  const decrementCount = props.decrementCount;
+  const changeTheme = props.changeTheme;
+  return (
+    <div>
+      <Checkbox toggle onClick={changeTheme} />
+      <Button onClick={incrementCount}>plus</Button>
+      <Button onClick={decrementCount}>minus</Button>
+      <Header as='h4' inverted color='green'></Header>
       <Button basic inverted color='violet'>
         Violet
       </Button>
@@ -31,7 +32,6 @@ const Adder = (props) => {
       <Card>Some text in a card</Card>
       <Image src='/images/wireframe/image.png' size='small' />
       <Image src='/images/wireframe/image.png' size='tiny' />
-      
       <Card.Group itemsPerRow={3}>
         <Card>
           <Card.Content>
